@@ -1,3 +1,15 @@
+const express = require("express");
+
+const cors = require("cors");
+
+const si = require("systeminformation");
+
+const app = express();
+
+app.use(cors());
+
+app.use(express.static("public"));
+
 app.get("/api/system", async (req, res) => {
 
     try {
@@ -37,5 +49,13 @@ app.get("/api/system", async (req, res) => {
         });
 
     }
+
+});
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+
+    console.log("Servidor rodando");
 
 });
