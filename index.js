@@ -1,20 +1,31 @@
-const express = require('express');
-const os = require('os');
+const express = require("express");
+const cors = require("cors");
+const si = require("systeminformation");
+const path = require("path");
 
 const app = express();
 
-app.get('/', (req, res) => {
-  res.send(`
-    <h1>Monitor de Sistemas Operacionais</h1>
-    <p><strong>Hostname:</strong> ${os.hostname()}</p>
-    <p><strong>Plataforma:</strong> ${os.platform()}</p>
-    <p><strong>Arquitetura:</strong> ${os.arch()}</p>
-    <p><strong>Memória Total:</strong> ${Math.round(os.totalmem()/1024/1024)} MB</p>
-    <p><strong>Memória Livre:</strong> ${Math.round(os.freemem()/1024/1024)} MB</p>
-    <p><strong>CPUs:</strong> ${os.cpus().length}</p>
-    <p><strong>Uptime:</strong> ${Math.round(os.uptime()/60)} minutos</p>
-  `);
+app.use(cors());
+
+app.use(express.static("public"));
+
+app.get("/api/system", async (req, res) => {
+
+    const cpu = await si.currentLoad();
+    const mem = await si.mem();
+    const os = await si.osInfo();
+
+    res.json({
+        cpu: cpu.currentLoad.toFixed(2),
+        ram: ((mem.used / mem.total) * 100).toFixed(2),
+        hostname: os.hostname,
+        platform: os.platform,
+        arch: os.arch,
+        node: process.version
+    });
+
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log("Servidor rodando"));
+app.listen(3000, () => {
+    console.log("Servidor rodando");
+});
