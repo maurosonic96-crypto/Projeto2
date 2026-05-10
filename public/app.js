@@ -8,8 +8,6 @@ async function carregarDados() {
         const dados =
             await resposta.json();
 
-        console.log(dados);
-
         document.getElementById("cpu").innerText =
             dados.cpu + "%";
 
@@ -18,6 +16,15 @@ async function carregarDados() {
 
         document.getElementById("platform").innerText =
             dados.platform;
+
+        document.getElementById("hostname").innerText =
+            dados.hostname;
+
+        document.getElementById("node").innerText =
+            dados.node;
+
+        document.getElementById("cloud").innerText =
+            dados.cloud;
 
     } catch(error) {
 

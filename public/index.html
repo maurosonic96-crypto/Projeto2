@@ -5,7 +5,9 @@
 
     <meta charset="UTF-8">
 
-    <title>Dashboard do Sistema</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sonic System Dashboard</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -13,34 +15,81 @@
 
 <body>
 
-    <h1>Dashboard do Sistema</h1>
+    <div class="overlay"></div>
 
-    <div class="card">
+    <header>
 
-        <h2>CPU</h2>
+        <img src="sonic.gif" class="sonic">
 
-        <p id="cpu">Carregando...</p>
+        <h1>SONIC SYSTEM DASHBOARD</h1>
 
-    </div>
+        <p class="subtitle">
+            Monitoramento do Sistema Operacional em Tempo Real
+        </p>
 
-    <div class="card">
+    </header>
 
-        <h2>RAM</h2>
+    <main>
 
-        <p id="ram">Carregando...</p>
+        <div class="card cpu">
 
-    </div>
+            <h2>⚡ CPU SPEED</h2>
 
-    <div class="card">
+            <p id="cpu">0%</p>
 
-        <h2>Sistema</h2>
+        </div>
 
-        <p id="platform">Carregando...</p>
+        <div class="card ram">
 
-    </div>
+            <h2>💾 RING MEMORY</h2>
+
+            <p id="ram">0%</p>
+
+        </div>
+
+        <div class="card system">
+
+            <h2>🖥 SYSTEM ZONE</h2>
+
+            <p id="platform">---</p>
+
+        </div>
+
+        <div class="card host">
+
+            <h2>🌎 HOSTNAME</h2>
+
+            <p id="hostname">---</p>
+
+        </div>
+
+        <div class="card node">
+
+            <h2>🚀 NODE ENGINE</h2>
+
+            <p id="node">---</p>
+
+        </div>
+
+        <div class="card cloud">
+
+            <h2>☁ CLOUD STATUS</h2>
+
+            <p id="cloud">---</p>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Fatec Itapetininga • Sistemas Operacionais • Node.js + Express + Render
+        </p>
+
+    </footer>
 
     <script src="app.js"></script>
 
 </body>
-
 </html>

@@ -1,17 +1,163 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 body {
 
-    font-family: Arial;
-    background: #111;
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.9)
+        ),
+        url("https://images.alphacoders.com/515/515664.jpg");
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
     color: white;
+
+    min-height: 100vh;
+
+}
+
+.overlay {
+
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(3px);
+
+    z-index: -1;
+
+}
+
+header {
+
+    text-align: center;
+
     padding: 30px;
+
+}
+
+header h1 {
+
+    font-size: 3rem;
+
+    color: #00a2ff;
+
+    text-shadow:
+        0 0 10px #00a2ff,
+        0 0 20px #00a2ff,
+        0 0 40px #00a2ff;
+
+}
+
+.subtitle {
+
+    margin-top: 10px;
+
+    color: #ffd000;
+
+}
+
+.sonic {
+
+    width: 180px;
+
+    animation: correr 2s infinite alternate;
+
+}
+
+@keyframes correr {
+
+    from {
+
+        transform: translateX(-20px);
+
+    }
+
+    to {
+
+        transform: translateX(20px);
+
+    }
+
+}
+
+main {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+
+    padding: 40px;
 
 }
 
 .card {
 
-    background: #222;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+    background: rgba(0,0,0,0.6);
+
+    border: 3px solid #00a2ff;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 0 10px #00a2ff,
+        0 0 20px #00a2ff;
+
+    transition: 0.3s;
+
+}
+
+.card:hover {
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 20px #ffd000,
+        0 0 40px #ffd000;
+
+}
+
+.card h2 {
+
+    margin-bottom: 20px;
+
+    color: #ffd000;
+
+}
+
+.card p {
+
+    font-size: 2rem;
+
+    font-weight: bold;
+
+}
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #aaa;
 
 }
