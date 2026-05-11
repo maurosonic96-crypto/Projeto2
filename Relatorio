@@ -1,0 +1,206 @@
+# 🚀 RELATÓRIO COMPARATIVO — EVOLUÇÃO DO PROJETO CLOUD-SO-APP
+
+<div align="center">
+
+![Node.js](https://img.shields.io/badge/Node.js-runtime-green?style=for-the-badge)
+![Express](https://img.shields.io/badge/Express.js-backend-black?style=for-the-badge)
+![Cloud](https://img.shields.io/badge/Cloud-Render-blueviolet?style=for-the-badge)
+![API](https://img.shields.io/badge/API-REST-blue?style=for-the-badge)
+![SO](https://img.shields.io/badge/Sistemas%20Operacionais-monitoring-orange?style=for-the-badge)
+![Evolução](https://img.shields.io/badge/Nível-Profissional-success?style=for-the-badge)
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" width="120">
+<img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="120">
+<img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="120">
+
+</div>
+
+---
+
+# 📌 1. VISÃO GERAL
+
+Este relatório compara:
+
+| Versão | Descrição |
+|------|--------|
+| 🟢 Projeto Anterior (Aula 07) | API simples de monitoramento |
+| 🔵 Projeto Atual (Aula 08) | Dashboard avançado + simulação de SO |
+
+---
+
+# ⚙️ 2. ARQUITETURA — ANTES vs DEPOIS
+
+## 🟢 Projeto Anterior
+
+```mermaid
+flowchart LR
+A[Node.js] --> B[Express]
+B --> C[API REST]
+C --> D[Dados básicos do SO]
+```
+---
+
+## 🟢 Projeto Atual
+
+
+```mermaid
+flowchart LR
+A[Node.js] --> B[Express API]
+B --> C[Módulo OS]
+B --> D[Métricas avançadas]
+B --> E[Detecção Cloud]
+B --> F[Simulação de SO]
+C --> G[Dashboard]
+D --> G
+E --> G
+F --> G
+```
+---
+
+# 🧠 3. EVOLUÇÃO CONCEITUAL
+
+## 🟢 Antes (Aula 07)
+
+- API REST básica
+- Dados simples:
+  - hostname
+  - CPU
+  - memória
+  - uptime
+- Deploy funcional
+
+📌 Objetivo:
+> Entender cloud + backend
+
+---
+
+## 🔵 Agora (Aula 08)
+
+- Dashboard completo
+- Métricas interpretáveis
+- Análise do sistema
+- Simulação de SO
+- Comparação entre ambientes
+
+📌 Objetivo:
+> Pensar como engenheiro de sistemas
+
+---
+
+# 📊 4. COMPARAÇÃO TÉCNICA
+
+| Aspecto | 🟢 Antes | 🔵 Agora |
+|--------|--------|--------|
+| API | Básica | Estruturada |
+| Dados | Brutos | Interpretados |
+| Arquitetura | Linear | Modular |
+| Cloud | Deploy simples | Análise de ambiente |
+| Sistema Operacional | Observação | Observação + simulação |
+| Complexidade | Baixa | Média/Alta |
+| Nível | Iniciante | Intermediário/Profissional |
+
+---
+
+# 🔍 5. EVOLUÇÃO DAS MÉTRICAS
+
+## 🟢 Antes
+
+- CPU (quantidade)
+- Memória total
+- Memória livre
+- Uptime bruto
+
+---
+
+## 🔵 Agora
+
+- Uso percentual de memória
+- Uso médio de CPU
+- Uptime formatado
+- IP da máquina
+- Quantidade de arquivos
+- Status do sistema
+
+📌 Virada conceitual:
+
+> Dados → Informação
+
+---
+
+# ⚡ 6. SALTO DE ENGENHARIA
+
+## 🟢 Antes
+
+👉 API = "sensor"
+
+## 🔵 Agora
+
+👉 API = "sistema inteligente"
+
+---
+
+# 🧠 7. INTEGRAÇÃO COM SISTEMA OPERACIONAL
+
+Uso do módulo `os`:
+
+- arquitetura
+- CPUs
+- memória
+- uptime
+- kernel
+
+📌 Resultado:
+
+> Monitoramento real de sistema
+
+---
+
+# ☁️ 8. CLOUD — EVOLUÇÃO
+
+## 🟢 Antes
+
+- Deploy no Render
+- Aplicação online
+
+---
+
+## 🔵 Agora
+
+- Detecção de ambiente:
+  - local vs cloud
+- Variáveis de ambiente
+- Porta dinâmica
+- Infraestrutura virtual
+
+📌 Conceito-chave:
+
+> Infraestrutura como serviço (IaaS)
+
+---
+
+# 🧪 9. SIMULAÇÃO DE SISTEMAS OPERACIONAIS
+
+## 🟢 Antes
+
+- Apenas leitura do sistema
+
+---
+
+## 🔵 Agora
+
+- Simulação de:
+  - processos
+  - memória
+  - filas de execução
+
+```mermaid
+flowchart TD
+A[Processo Criado] --> B[Fila]
+B --> C[Executando]
+C --> D[Finalizado]
