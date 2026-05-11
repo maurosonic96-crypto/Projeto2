@@ -1,95 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sonic System Dashboard</title>
-
+    <title>Tails System Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-    <div class="overlay"></div>
+    <div class="scanlines"></div>
+    <div class="bg-grid"></div>
+
+    <div class="tails-avatar">
+        <div class="tails-body">
+            <div class="ear ear-left"></div>
+            <div class="ear ear-right"></div>
+            <div class="head">
+                <div class="face">
+                    <div class="eye eye-left">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="eye eye-right">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="nose"></div>
+                    <div class="muzzle">
+                        <div class="mouth"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-torso">
+                <div class="belly"></div>
+                <div class="glove glove-left"></div>
+                <div class="glove glove-right"></div>
+                <div class="shoe shoe-left"></div>
+                <div class="shoe shoe-right"></div>
+            </div>
+            <div class="tails-wrap">
+                <div class="tail tail-1">
+                    <div class="tail-tip"></div>
+                </div>
+                <div class="tail tail-2">
+                    <div class="tail-tip"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header>
-
-        <img src="sonic.gif" class="sonic">
-
-        <h1>SONIC SYSTEM DASHBOARD</h1>
-
-        <p class="subtitle">
-            Monitoramento do Sistema Operacional em Tempo Real
-        </p>
-
+        <div class="header-badge">MILES "TAILS" PROWER</div>
+        <h1>TAILS<span class="accent">.</span>SYSTEM<span class="dash">—</span>DASHBOARD</h1>
+        <p class="subtitle">Monitoramento de Recursos em Tempo Real • Workshop do Tails</p>
+        <div class="header-line"></div>
     </header>
 
     <main>
 
-        <div class="card cpu">
-
-            <h2>⚡ CPU SPEED</h2>
-
-            <p id="cpu">0%</p>
-
+        <div class="card cpu-card" id="card-cpu">
+            <div class="card-icon">⚙️</div>
+            <div class="card-inner">
+                <h2>CPU POWER</h2>
+                <div class="meter-wrap">
+                    <div class="meter-bar" id="cpu-bar"></div>
+                </div>
+                <p id="cpu" class="value">0%</p>
+                <span class="label">Processador</span>
+            </div>
+            <div class="ring-deco"></div>
         </div>
 
-        <div class="card ram">
-
-            <h2>💾 RING MEMORY</h2>
-
-            <p id="ram">0%</p>
-
+        <div class="card ram-card" id="card-ram">
+            <div class="card-icon">💡</div>
+            <div class="card-inner">
+                <h2>MEMÓRIA RAM</h2>
+                <div class="meter-wrap">
+                    <div class="meter-bar" id="ram-bar"></div>
+                </div>
+                <p id="ram" class="value">0%</p>
+                <span class="label">Uso de Memória</span>
+            </div>
+            <div class="ring-deco"></div>
         </div>
 
-        <div class="card system">
-
-            <h2>🖥 SYSTEM ZONE</h2>
-
-            <p id="platform">---</p>
-
+        <div class="card platform-card">
+            <div class="card-icon">🖥️</div>
+            <div class="card-inner">
+                <h2>PLATAFORMA</h2>
+                <p id="platform" class="value small">---</p>
+                <span class="label">Sistema Operacional</span>
+            </div>
+            <div class="ring-deco"></div>
         </div>
 
-        <div class="card host">
-
-            <h2>🌎 HOSTNAME</h2>
-
-            <p id="hostname">---</p>
-
+        <div class="card host-card">
+            <div class="card-icon">🌐</div>
+            <div class="card-inner">
+                <h2>HOSTNAME</h2>
+                <p id="hostname" class="value small">---</p>
+                <span class="label">Nome do Host</span>
+            </div>
+            <div class="ring-deco"></div>
         </div>
 
-        <div class="card node">
-
-            <h2>🚀 NODE ENGINE</h2>
-
-            <p id="node">---</p>
-
+        <div class="card node-card">
+            <div class="card-icon">🚀</div>
+            <div class="card-inner">
+                <h2>NODE ENGINE</h2>
+                <p id="node" class="value small">---</p>
+                <span class="label">Versão do Node.js</span>
+            </div>
+            <div class="ring-deco"></div>
         </div>
 
-        <div class="card cloud">
-
-            <h2>☁ CLOUD STATUS</h2>
-
-            <p id="cloud">---</p>
-
+        <div class="card cloud-card">
+            <div class="card-icon">☁️</div>
+            <div class="card-inner">
+                <h2>CLOUD STATUS</h2>
+                <p id="cloud" class="value small">---</p>
+                <span class="label">Ambiente de Deploy</span>
+            </div>
+            <div class="ring-deco"></div>
         </div>
 
     </main>
 
     <footer>
-
-        <p>
-            Fatec Itapetininga • Sistemas Operacionais • Node.js + Express + Render
-        </p>
-
+        <div class="footer-rings">
+            <div class="ring-small"></div>
+            <div class="ring-small"></div>
+            <div class="ring-small"></div>
+        </div>
+        <p>Fatec Itapetininga &bull; Sistemas Operacionais &bull; Node.js + Express + Render</p>
+        <p class="footer-quote">"I can do anything!" — Miles Tails Prower</p>
     </footer>
 
     <script src="app.js"></script>
-
 </body>
 </html>
