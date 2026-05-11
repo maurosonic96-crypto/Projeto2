@@ -214,7 +214,7 @@ O desenvolvimento deste projeto na disciplina de Sistemas Operacionais permitiu 
 
 A utilização de Node.js, Express e Render possibilitou compreender como aplicações modernas interagem com o sistema operacional e podem ser disponibilizadas em ambientes cloud, aproximando a atividade acadêmica de cenários reais da área de tecnologia.
 
-Além da evolução técnica do projeto, a atividade contribuiu para o desenvolvimento de competências importantes no curso de Análise e Desenvolvimento de Sistemas da Fatec Itapetininga, como modelagem de aplicações, criação de APIs REST, deploy em nuvem, versionamento e análise de infraestrutura computacional. :contentReference[oaicite:0]{index=0}
+Além da evolução técnica do projeto, a atividade contribuiu para o desenvolvimento de competências importantes no curso de Análise e Desenvolvimento de Sistemas da Fatec Itapetininga, como modelagem de aplicações, criação de APIs REST, deploy em nuvem, versionamento e análise de infraestrutura computacional.
 
 Por fim, o projeto demonstrou a importância da integração entre teoria e prática no processo de formação tecnológica, permitindo compreender de maneira aplicada como sistemas operacionais, backend e computação em nuvem trabalham juntos na construção de soluções modernas.
 
