@@ -3,7 +3,7 @@
 Projeto acadêmico desenvolvido na disciplina de Sistemas Operacionais do curso de Análise e Desenvolvimento de Sistemas da Fatec Itapetininga.
 
 A aplicação utiliza Node.js, Express e Render para monitoramento de informações do sistema operacional em ambiente local e cloud, permitindo analisar recursos computacionais e compreender, na prática, conceitos relacionados à infraestrutura moderna de software.
-Link do projeto:https://projeto2-uz10.onrender.com
+Link do projeto: https://projeto2-uz10.onrender.com
 
 ---
 
