@@ -21,7 +21,15 @@
 /* ===== BASE ===== */
 body {
     font-family: 'Rajdhani', sans-serif;
-    background-color: var(--bg-dark);
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.85)
+        ),
+        url("tails.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: var(--tails-white);
     min-height: 100vh;
     overflow-x: hidden;
